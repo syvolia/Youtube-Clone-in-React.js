@@ -1,0 +1,54 @@
+$white: rgba(246, 246, 246, 1.0);
+$border: rgba(180, 186, 190, 1.0);
+$brand : rgba(237, 164, 163, 0.8);
+$dark: rgba(47, 57, 64, 1.0);
+$light: rgba(158, 169, 178, 1.0);
+$hover: rgba(232, 232, 232, 1.0);
+
+@mixin font-base {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+h1 {
+    @include font-base;
+    font-size: 1em;
+    color: $dark;
+}
+
+p {
+    @include font-base;
+    font-size: .7em;
+    color: $light;
+}
+
+main {
+    max-width: 540px;
+    background-color: $white;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 370px 4px 10px;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+    text-align: center;
+ }
+ 
+/*----------  Break Point 1 - 500px  ----------*/
+
+
+@media only screen and (max-width: 500px) {
+
+    main {border: none}
+
+    main {padding: 330px 4px 10px}
+}
+
+
+/*----------  Break Point 1 - 400px  ----------*/
+
+
+@media only screen and (max-width: 400px) {
+    
+    main {padding: 270px 4px 10px}
+}

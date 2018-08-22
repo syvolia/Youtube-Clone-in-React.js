@@ -1,0 +1,35 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1em;
+  color: #2f3940; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: .7em;
+  color: #9ea9b2; }
+
+main {
+  max-width: 540px;
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 370px 4px 10px;
+  border-left: 1px solid #b4babe;
+  border-right: 1px solid #b4babe;
+  text-align: center; }
+
+/*----------  Break Point 1 - 500px  ----------*/
+@media only screen and (max-width: 500px) {
+  main {
+    border: none; }
+  main {
+    padding: 330px 4px 10px; } }
+
+/*----------  Break Point 1 - 400px  ----------*/
+@media only screen and (max-width: 400px) {
+  main {
+    padding: 270px 4px 10px; } }
